@@ -36,7 +36,7 @@
   }
 </script>
 
-<style>
+<style lang="scss">
 
 body, html {
   margin:0;
@@ -57,17 +57,17 @@ ul.nav {
   padding: 10px 0;
   margin: 0;
   background: lightblue;
-}
 
-ul.nav li {
-  display: inline-block;
-  margin: 0 10px;
-}
+  li {
+    display: inline-block;
+    margin: 0 10px;
 
-ul.nav li a {
-  color: grey;
-  font-size: 14px;
-  text-decoration: none;
+    a {
+      color: grey;
+      font-size: 14px;
+      text-decoration: none;
+    }
+  }
 }
 
 </style>
