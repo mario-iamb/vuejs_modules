@@ -13,7 +13,7 @@
     </ul>
 
     <router-view></router-view>
-    
+
   </div>
 </template>
 
@@ -37,18 +37,26 @@
 </script>
 
 <style>
+
+body, html {
+  margin:0;
+  padding: 0;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 
 ul.nav {
+  width: 100%;
   list-style-type: none;
-  padding: 0;
+  padding: 10px 0;
+  margin: 0;
+  background: lightblue;
 }
 
 ul.nav li {
@@ -57,7 +65,9 @@ ul.nav li {
 }
 
 ul.nav li a {
-  color: #42b983;
+  color: grey;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 </style>
