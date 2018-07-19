@@ -12,7 +12,7 @@
         
         <!-- loop DIRECTIVES -->
         <ul>
-          <li class="green" v-for="item in items">{{item.title}}</li>
+          <li class="green" v-for="item in items" :key="item.id">{{item.title}}</li>
         </ul>
 
         <!-- input binding -->
@@ -67,7 +67,7 @@
                     {title:'List Item 2'},
                     {title:'List Item 3'}
                 ],
-                title: 'Marius title'
+                title: 'Mario title'
             }
         },
         methods: {

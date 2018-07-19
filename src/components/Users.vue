@@ -11,7 +11,7 @@
     </form>
     
     <ul>
-        <li v-for="user in users">
+        <li v-for="user in users" :key="user.id">
             <input type="checkbox" class="toggle" v-model="user.contacted">
             <span :class="{contacted: user.contacted}">
                 {{user.name}}: {{user.email}} <button v-on:click="deleteUser(user)">X</button>
@@ -31,18 +31,18 @@
                 newUser: {},
                 users: [
                     {
-                        name: 'Marius Simaska',
+                        name: 'Mario Simaska',
                         email: 'mario@gmail.com',
                         contacted: false
                     },
                     {
-                        name: 'Andrius Simaska',
+                        name: 'Andrew Simaska',
                         email: 'andrew@gmail.com',
                         contacted: false
                     },
                     {
-                        name: 'Romualdas Simaska',
-                        email: 'rsimas@splius.com',
+                        name: 'John Smith',
+                        email: 'john.smith@gmail.com',
                         contacted: false
                     }
                 ]

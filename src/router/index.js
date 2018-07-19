@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+import Hello from '@/components/Hello'
 import Test from '@/components/Test'
 import Resource from '@/components/Resource'
 import Users from '@/components/Users'
@@ -16,11 +17,17 @@ Vue.use(Router)
 //add this router to Dashboard component
 
 export default new Router({
+    mode: 'history',
     routes: [
         {
             path:'/',
             name: 'Test',
             component: Test
+        },
+        {
+            path:'/Hello',
+            name: 'Hello',
+            component: Hello
         },
         {
             path:'/Resource',

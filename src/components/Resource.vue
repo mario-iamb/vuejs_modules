@@ -3,7 +3,7 @@
       <h1>Users</h1>
 
       <ul>
-        <li v-for="user in users">
+        <li v-for="user in users" :key="user.id">
             <input type="checkbox" class="toggle" v-model="user.contacted">
             <span :class="{contacted: user.contacted}">
                 {{user.name}}: {{user.email}} <button v-on:click="deleteUser(user)">X</button>
