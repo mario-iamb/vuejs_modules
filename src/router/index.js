@@ -10,6 +10,7 @@ import Dashboard from '@/components/Dashboard'
 import NewEmployee from '@/components/NewEmployee'
 import ViewEmployee from '@/components/ViewEmployee'
 import EditEmployee from '@/components/EditEmployee'
+import ProductList from '@/components/ProductList'
 
 Vue.use(Router)
 
@@ -33,6 +34,11 @@ export default new Router({
             path:'/Resource',
             name: 'Resource',
             component: Resource
+        },
+        {
+            path: '/ProductList',
+            name: 'ProductList',
+            component: ProductList
         },
         {
             path:'/Users',
@@ -59,5 +65,6 @@ export default new Router({
             name: 'view-employee',
             component: ViewEmployee
         }
+        
     ]
 }) 

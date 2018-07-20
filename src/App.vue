@@ -10,6 +10,7 @@
       <li><router-link to="/Resource">Resource</router-link></li>
       <li><router-link to="/Users">Users</router-link></li>
       <li><router-link to="/Dashboard">Dashboard</router-link></li>
+      <li><router-link to="/ProductList">Products</router-link></li>
     </ul>
 
     <router-view></router-view>
