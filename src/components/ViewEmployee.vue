@@ -10,8 +10,7 @@
     <router-link to="/Dashboard">Back</router-link>
     <button @click="deleteEmployee">Delete</button>
 
-    <router-link v-bind:to="{name: 'edit-employee',
-    params: {employee_id: employee_id}}" class="add-new-btn">Edit</router-link>
+    <router-link v-bind:to="{name: 'edit-employee', params: {employee_id: employee_id}}" class="add-new-btn">Edit</router-link>
     
   </div>
 </template>
